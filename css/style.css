@@ -1,0 +1,223 @@
+@font-face {
+    font-family: "Manrope";
+    src: url("../fonts/manrope-variable.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 200 800;
+    font-display: swap;
+}
+
+:root {
+    font-size: 62.5%;
+    --color-text: #212121;
+    --color-muted: #6c778e;
+    --color-blue: #2a84ee;
+    --color-green: #2eb897;
+    --color-action: #1766bd;
+    --color-white: #ffffff;
+    --color-surface: #eaf3fd;
+    --color-border: #c3c3c3;
+}
+
+body {
+    font-family: "Manrope", Arial, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-text);
+    background-color: var(--color-white);
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4.6rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+a {
+    color: var(--color-action);
+    text-underline-offset: 0.2em;
+}
+
+.site-header a,
+.site-footer a,
+.button {
+    text-decoration: none;
+}
+
+.brand {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-blue);
+}
+
+.site-header__description,
+.site-footer__description {
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+.site-header nav,
+.site-header > button,
+.site-header > .button {
+    font-size: 1.8rem;
+}
+
+.site-header nav a,
+.site-footer a {
+    color: inherit;
+}
+
+.hero__title {
+    color: var(--color-green);
+}
+
+.hero__accent {
+    color: var(--color-blue);
+}
+
+.hero__description,
+.reports__intro,
+.reports__list {
+    font-size: 2.6rem;
+}
+
+.trial-form,
+.statistics,
+.features__categories,
+.benefits__item,
+.pricing__item {
+    background-color: var(--color-surface);
+    border-radius: 1.6rem;
+}
+
+.trial-form__description {
+    font-size: 2.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.trial-form__label,
+.trial-form__input {
+    font-size: 2rem;
+}
+
+button,
+input {
+    font-family: inherit;
+    line-height: inherit;
+}
+
+.trial-form__input {
+    color: var(--color-text);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: 0.8rem;
+}
+
+input::placeholder {
+    color: var(--color-muted);
+    opacity: 1;
+}
+
+.button {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--color-white);
+    background-color: var(--color-action);
+    border: 1px solid var(--color-action);
+    border-radius: 0.8rem;
+}
+
+.button--secondary,
+.site-footer button {
+    font-weight: 400;
+    color: var(--color-action);
+    background-color: var(--color-white);
+}
+
+.statistics__value {
+    font-size: 7rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--color-blue);
+}
+
+.features__categories {
+    font-size: 2.6rem;
+    list-style-type: none;
+}
+
+.benefits__list,
+.pricing__list {
+    list-style-type: none;
+}
+
+.benefits__title {
+    text-align: center;
+}
+
+.pricing__period {
+    font-size: 1.8rem;
+    border: 1px solid var(--color-border);
+    border-radius: 0.8rem;
+}
+
+.pricing__period input {
+    accent-color: var(--color-action);
+}
+
+.pricing__title {
+    font-size: 2.6rem;
+}
+
+.pricing__price {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.pricing__discount {
+    font-size: 2rem;
+    color: var(--color-action);
+}
+
+.review {
+    background-color: var(--color-surface);
+    border-radius: 1.6rem;
+}
+
+.review__author {
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.site-footer {
+    background-color: var(--color-surface);
+}
+
+.site-footer h2 {
+    font-size: 2.2rem;
+}
+
+.site-footer ul {
+    list-style-type: none;
+}
+
+.site-footer small {
+    font-size: 2rem;
+    color: var(--color-muted);
+}
