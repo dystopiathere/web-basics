@@ -469,3 +469,132 @@ main > section {
 .site-footer__inner > p:not(.site-footer__description) {
     margin-top: 2.4rem;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.brand__image {
+    display: block;
+    width: 26rem;
+}
+
+.hero__illustration {
+    position: relative;
+    width: 60rem;
+    max-width: 100%;
+    aspect-ratio: 600 / 440;
+    margin-bottom: 3.2rem;
+}
+
+.hero__chart {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 98%;
+}
+
+.hero__box {
+    position: absolute;
+    height: auto;
+    object-fit: contain;
+}
+
+.hero__box--wildberries {
+    bottom: 0;
+    left: 3%;
+    width: 35%;
+}
+
+.hero__box--ozon {
+    right: 0;
+    bottom: 0;
+    width: 55%;
+}
+
+.features__marketplaces {
+    display: block;
+    width: 28rem;
+    margin-bottom: 2.4rem;
+    object-fit: contain;
+}
+
+.features__report {
+    display: block;
+    width: 73rem;
+    margin-bottom: 3.2rem;
+    border: 1px solid var(--color-border);
+    border-radius: 0.8rem;
+}
+
+.trial-banner > .container {
+    padding-top: 4rem;
+    padding-bottom: 0;
+    border-radius: 1.6rem;
+    background-color: var(--color-action);
+    background-image: url("../images/trial-background.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.trial-banner h2 {
+    color: var(--color-white);
+}
+
+.trial-banner__illustration {
+    position: relative;
+    width: 60rem;
+    max-width: 100%;
+    aspect-ratio: 600 / 420;
+    margin: 3.2rem 0 0;
+}
+
+.trial-banner__person {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 70%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+}
+
+.trial-banner__clock,
+.trial-banner__gift {
+    position: absolute;
+    bottom: 8%;
+    left: 0;
+    width: 40%;
+    height: auto;
+    object-fit: contain;
+}
+
+.reports__image {
+    display: block;
+    width: 67.6rem;
+    margin-top: 3.2rem;
+    object-fit: contain;
+}
+
+.benefits__icon {
+    display: block;
+    width: 5.5rem;
+    height: 4.5rem;
+    margin: 0 auto 2rem;
+    object-fit: contain;
+}
+
+.site-footer__payments {
+    margin-top: 3.2rem;
+}
+
+.site-footer__payment {
+    display: inline-block;
+    width: auto;
+    height: 3rem;
+    margin: 0 1.6rem 1.6rem 0;
+    object-fit: contain;
+    vertical-align: middle;
+}

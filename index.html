@@ -21,7 +21,13 @@
                 href="index.html"
                 aria-label="Mpassistant — главная"
         >
-            Mpassistant
+            <img
+                    class="brand__image"
+                    src="images/logo.svg"
+                    alt="Mpassistant"
+                    width="260"
+                    height="25"
+            />
         </a>
         <p class="site-header__description">
             Аналитика и оцифровка продаж Wildberries и Ozon
@@ -52,6 +58,41 @@
                 Увеличивай прибыль, автоматизируй рутину и экономь время
                 на сборе и анализе отчётов
             </p>
+            <div class="hero__illustration">
+                <img
+                        class="hero__chart"
+                        src="images/growth-chart.svg"
+                        alt=""
+                        width="586"
+                        height="380"
+                />
+                <picture>
+                    <source
+                            srcset="images/wildberries-box.webp"
+                            type="image/webp"
+                    />
+                    <img
+                            class="hero__box hero__box--wildberries"
+                            src="images/wildberries-box.png"
+                            alt=""
+                            width="212"
+                            height="200"
+                    />
+                </picture>
+                <picture>
+                    <source
+                            srcset="images/ozon-box.webp"
+                            type="image/webp"
+                    />
+                    <img
+                            class="hero__box hero__box--ozon"
+                            src="images/ozon-box.png"
+                            alt=""
+                            width="540"
+                            height="364"
+                    />
+                </picture>
+            </div>
             <form
                     class="trial-form"
                     aria-labelledby="hero-trial-heading"
@@ -110,6 +151,20 @@
     >
         <div class="container">
             <h2 id="features-heading">Возможности сервиса</h2>
+            <picture>
+                <source
+                        srcset="images/marketplaces.webp"
+                        type="image/webp"
+                />
+                <img
+                        class="features__marketplaces"
+                        src="images/marketplaces.png"
+                        alt="Маркетплейсы: Яндекс Маркет, Ozon и Wildberries"
+                        width="337"
+                        height="96"
+                        loading="lazy"
+                />
+            </picture>
             <ul class="features__categories">
                 <li>Финансовая аналитика</li>
                 <li>Товарная аналитика</li>
@@ -125,10 +180,24 @@
                 <li>Сводка продаж</li>
                 <li>Учёт самовыкупов</li>
             </ul>
+            <picture>
+                <source
+                        srcset="images/financial-report.webp"
+                        type="image/webp"
+                />
+                <img
+                        class="features__report"
+                        src="images/financial-report.jpg"
+                        alt="Пример финансового отчёта: выручка, расходы и прибыль по периодам"
+                        width="700"
+                        height="450"
+                        loading="lazy"
+                />
+            </picture>
             <a class="button" href="#trial">Попробовать бесплатно</a>
         </div>
     </section>
-    <section aria-labelledby="time-heading">
+    <section class="trial-banner" aria-labelledby="time-heading">
         <div class="container">
             <h2 id="time-heading">Начните экономить своё время</h2>
             <form
@@ -158,6 +227,36 @@
                     Попробовать
                 </button>
             </form>
+            <div class="trial-banner__illustration">
+                <picture>
+                    <source
+                            srcset="images/clock.webp"
+                            type="image/webp"
+                    />
+                    <img
+                            class="trial-banner__clock"
+                            src="images/clock.png"
+                            alt=""
+                            width="494"
+                            height="547"
+                            loading="lazy"
+                    />
+                </picture>
+                <picture>
+                    <source
+                            srcset="images/trial-woman.webp"
+                            type="image/webp"
+                    />
+                    <img
+                            class="trial-banner__person"
+                            src="images/trial-woman.png"
+                            alt=""
+                            width="800"
+                            height="533"
+                            loading="lazy"
+                    />
+                </picture>
+            </div>
         </div>
     </section>
     <section class="reports" aria-labelledby="reports-heading">
@@ -177,6 +276,20 @@
                 </li>
                 <li>Добавите любое количество магазинов</li>
             </ul>
+            <picture>
+                <source
+                        srcset="images/reports-woman.webp"
+                        type="image/webp"
+                />
+                <img
+                        class="reports__image"
+                        src="images/reports-woman.png"
+                        alt=""
+                        width="996"
+                        height="664"
+                        loading="lazy"
+                />
+            </picture>
         </div>
     </section>
     <section class="benefits" aria-labelledby="benefits-heading">
@@ -184,6 +297,14 @@
             <h2 id="benefits-heading">Почему выбирают Mpassistant</h2>
             <ul class="benefits__list">
                 <li class="benefits__item">
+                    <img
+                            class="benefits__icon"
+                            src="images/accuracy.svg"
+                            alt=""
+                            width="35"
+                            height="35"
+                            loading="lazy"
+                    />
                     <h3 class="benefits__title">Точность данных</h3>
                     <p>
                         Данные в отчётах сервиса полностью совпадает с
@@ -191,6 +312,14 @@
                     </p>
                 </li>
                 <li class="benefits__item">
+                    <img
+                            class="benefits__icon"
+                            src="images/analytics.svg"
+                            alt=""
+                            width="55"
+                            height="34"
+                            loading="lazy"
+                    />
                     <h3 class="benefits__title">Большой функционал</h3>
                     <p>
                         Полный набор инструментов для внутренней
@@ -200,6 +329,14 @@
                     </p>
                 </li>
                 <li class="benefits__item">
+                    <img
+                            class="benefits__icon"
+                            src="images/manual.svg"
+                            alt=""
+                            width="40"
+                            height="32"
+                            loading="lazy"
+                    />
                     <h3 class="benefits__title">Лёгкость освоения</h3>
                     <p>
                         Наши отчёты просты и удобны. Все отчёты имеют
@@ -208,6 +345,14 @@
                     </p>
                 </li>
                 <li class="benefits__item">
+                    <img
+                            class="benefits__icon"
+                            src="images/experience.svg"
+                            alt=""
+                            width="34"
+                            height="45"
+                            loading="lazy"
+                    />
                     <h3 class="benefits__title">Подходит всем</h3>
                     <p>
                         Mpassistant создан селлерами для селлеров. Наш
@@ -218,6 +363,14 @@
                     </p>
                 </li>
                 <li class="benefits__item">
+                    <img
+                            class="benefits__icon"
+                            src="images/privacy.svg"
+                            alt=""
+                            width="36"
+                            height="42"
+                            loading="lazy"
+                    />
                     <h3 class="benefits__title">Конфиденциальность</h3>
                     <p>
                         Ваша конфиденциальность для нас самый главный
@@ -228,6 +381,14 @@
                     </p>
                 </li>
                 <li class="benefits__item">
+                    <img
+                            class="benefits__icon"
+                            src="images/support.svg"
+                            alt=""
+                            width="38"
+                            height="38"
+                            loading="lazy"
+                    />
                     <h3 class="benefits__title">Служба заботы</h3>
                     <p>
                         Наша служба заботы готова решить практически
@@ -237,7 +398,11 @@
             </ul>
         </div>
     </section>
-    <section id="trial" aria-labelledby="trial-heading">
+    <section
+            class="trial-banner trial-banner--gift"
+            id="trial"
+            aria-labelledby="trial-heading"
+    >
         <div class="container">
             <h2 id="trial-heading">Попробуйте бесплатно</h2>
             <form
@@ -267,6 +432,36 @@
                     Попробовать
                 </button>
             </form>
+            <div class="trial-banner__illustration">
+                <picture>
+                    <source
+                            srcset="images/gift.webp"
+                            type="image/webp"
+                    />
+                    <img
+                            class="trial-banner__gift"
+                            src="images/gift.png"
+                            alt=""
+                            width="502"
+                            height="502"
+                            loading="lazy"
+                    />
+                </picture>
+                <picture>
+                    <source
+                            srcset="images/trial-woman-gift.webp"
+                            type="image/webp"
+                    />
+                    <img
+                            class="trial-banner__person"
+                            src="images/trial-woman-gift.png"
+                            alt=""
+                            width="800"
+                            height="533"
+                            loading="lazy"
+                    />
+                </picture>
+            </div>
         </div>
     </section>
     <section
@@ -433,7 +628,13 @@
                 href="index.html"
                 aria-label="Mpassistant — главная"
         >
-            Mpassistant
+            <img
+                    class="brand__image"
+                    src="images/logo.svg"
+                    alt="Mpassistant"
+                    width="260"
+                    height="25"
+            />
         </a>
         <p class="site-footer__description">
             Аналитика и оцифровка продаж Wildberries и Ozon
@@ -483,6 +684,48 @@
             </small>
         </p>
         <p><small>Редизайн сайта Turkuletsdesign</small></p>
+        <div class="site-footer__payments">
+            <img
+                    class="site-footer__payment"
+                    src="images/visa.png"
+                    alt="Visa"
+                    width="124"
+                    height="50"
+                    loading="lazy"
+            />
+            <img
+                    class="site-footer__payment"
+                    src="images/mastercard.png"
+                    alt="Mastercard"
+                    width="83"
+                    height="50"
+                    loading="lazy"
+            />
+            <img
+                    class="site-footer__payment"
+                    src="images/maestro.png"
+                    alt="Maestro"
+                    width="84"
+                    height="50"
+                    loading="lazy"
+            />
+            <img
+                    class="site-footer__payment"
+                    src="images/mir.png"
+                    alt="Мир"
+                    width="177"
+                    height="50"
+                    loading="lazy"
+            />
+            <img
+                    class="site-footer__payment"
+                    src="images/modulbank.png"
+                    alt="Модульбанк"
+                    width="266"
+                    height="70"
+                    loading="lazy"
+            />
+        </div>
     </div>
 </footer>
 </body>
