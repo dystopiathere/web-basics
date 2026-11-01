@@ -1,246 +1,489 @@
 <!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-          content="Mpassistant — внутренняя аналитика и финансовый учёт для бизнеса на Wildberries и Ozon.">
-    <title>Mpassistant — аналитика и финансовый учёт для маркетплейсов</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta
+            name="description"
+            content="Mpassistant — внутренняя аналитика и финансовый учёт для бизнеса на Wildberries и Ozon."
+    />
+    <title>
+        Mpassistant — аналитика и финансовый учёт для маркетплейсов
+    </title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Mpassistant — главная">Mpassistant</a>
-    <p class="site-header__description">Аналитика и оцифровка продаж Wildberries и Ozon</p>
-    <nav aria-label="Основная навигация">
-        <ul>
-            <li><a href="#about">О нас</a></li>
-            <li><a href="#features">Возможности</a></li>
-            <li><a href="#pricing">Тарифы</a></li>
-        </ul>
-    </nav>
-    <button class="button button--secondary" type="button">Вход</button>
-    <a class="button" href="#trial">Зарегистрироваться</a>
+    <div class="container site-header__inner">
+        <a
+                class="brand"
+                href="index.html"
+                aria-label="Mpassistant — главная"
+        >
+            Mpassistant
+        </a>
+        <p class="site-header__description">
+            Аналитика и оцифровка продаж Wildberries и Ozon
+        </p>
+        <nav aria-label="Основная навигация">
+            <ul>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#features">Возможности</a></li>
+                <li><a href="#pricing">Тарифы</a></li>
+            </ul>
+        </nav>
+        <button class="button button--secondary" type="button">
+            Вход
+        </button>
+        <a class="button" href="#trial">Зарегистрироваться</a>
+    </div>
 </header>
 <main>
     <section class="hero" aria-labelledby="hero-heading">
-        <h1 class="hero__title" id="hero-heading">Внутренняя аналитика и <span class="hero__accent">финансовый учёт для бизнеса на маркетплейсах</span>
-        </h1>
-        <p class="hero__description">Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе
-            отчётов</p>
-        <form class="trial-form" aria-labelledby="hero-trial-heading">
-            <h2 class="trial-form__description" id="hero-trial-heading">Начните свой 3-дневный пробный период с
-                неограниченным доступом ко всем
-                возможностям</h2>
-            <label class="trial-form__label" for="hero-email">Введите ваш email</label>
-            <input class="trial-form__input" id="hero-email" name="email" type="email" autocomplete="email"
-                   placeholder="Введите ваш email"
-                   required>
-            <button class="button" type="button">Попробовать</button>
-        </form>
+        <div class="container">
+            <h1 class="hero__title" id="hero-heading">
+                Внутренняя аналитика и
+                <span class="hero__accent">
+                            финансовый учёт для бизнеса на маркетплейсах
+                        </span>
+            </h1>
+            <p class="hero__description">
+                Увеличивай прибыль, автоматизируй рутину и экономь время
+                на сборе и анализе отчётов
+            </p>
+            <form
+                    class="trial-form"
+                    aria-labelledby="hero-trial-heading"
+            >
+                <h2
+                        class="trial-form__description"
+                        id="hero-trial-heading"
+                >
+                    Начните свой 3-дневный пробный период с
+                    неограниченным доступом ко всем возможностям
+                </h2>
+                <label class="trial-form__label" for="hero-email">
+                    Введите ваш email
+                </label>
+                <input
+                        class="trial-form__input"
+                        id="hero-email"
+                        name="email"
+                        type="email"
+                        autocomplete="email"
+                        placeholder="Введите ваш email"
+                        required
+                />
+                <button class="button" type="button">
+                    Попробовать
+                </button>
+            </form>
+        </div>
     </section>
     <section id="about" aria-labelledby="about-heading">
-        <h2 id="about-heading">О нас</h2>
-        <dl class="statistics">
-            <dt class="statistics__value">777</dt>
-            <dd>Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе отчётов</dd>
-            <dt class="statistics__value">5</dt>
-            <dd>Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе отчётов</dd>
-            <dt class="statistics__value">100 000</dt>
-            <dd>Увеличивай прибыль, автоматизируй рутину и экономь время на сборе и анализе отчётов</dd>
-        </dl>
+        <div class="container">
+            <h2 id="about-heading">О нас</h2>
+            <dl class="statistics">
+                <dt class="statistics__value">777</dt>
+                <dd>
+                    Увеличивай прибыль, автоматизируй рутину и экономь
+                    время на сборе и анализе отчётов
+                </dd>
+                <dt class="statistics__value">5</dt>
+                <dd>
+                    Увеличивай прибыль, автоматизируй рутину и экономь
+                    время на сборе и анализе отчётов
+                </dd>
+                <dt class="statistics__value">100 000</dt>
+                <dd>
+                    Увеличивай прибыль, автоматизируй рутину и экономь
+                    время на сборе и анализе отчётов
+                </dd>
+            </dl>
+        </div>
     </section>
-    <section class="features" id="features" aria-labelledby="features-heading">
-        <h2 id="features-heading">Возможности сервиса</h2>
-        <ul class="features__categories">
-            <li>Финансовая аналитика</li>
-            <li>Товарная аналитика</li>
-            <li>Аналитика внутренней рекламы</li>
-            <li>Статистика</li>
-            <li>Инструменты</li>
-        </ul>
-        <h3>Инструменты для финансовой аналитики</h3>
-        <ul>
-            <li>Отчёт о прибылях и убытках (P&amp;L)</li>
-            <li>Отчёт о движении денежных средств (ДДС)</li>
-            <li>Журнал операций</li>
-            <li>Сводка продаж</li>
-            <li>Учёт самовыкупов</li>
-        </ul>
-        <a class="button" href="#trial">Попробовать бесплатно</a>
+    <section
+            class="features"
+            id="features"
+            aria-labelledby="features-heading"
+    >
+        <div class="container">
+            <h2 id="features-heading">Возможности сервиса</h2>
+            <ul class="features__categories">
+                <li>Финансовая аналитика</li>
+                <li>Товарная аналитика</li>
+                <li>Аналитика внутренней рекламы</li>
+                <li>Статистика</li>
+                <li>Инструменты</li>
+            </ul>
+            <h3>Инструменты для финансовой аналитики</h3>
+            <ul>
+                <li>Отчёт о прибылях и убытках (P&amp;L)</li>
+                <li>Отчёт о движении денежных средств (ДДС)</li>
+                <li>Журнал операций</li>
+                <li>Сводка продаж</li>
+                <li>Учёт самовыкупов</li>
+            </ul>
+            <a class="button" href="#trial">Попробовать бесплатно</a>
+        </div>
     </section>
     <section aria-labelledby="time-heading">
-        <h2 id="time-heading">Начните экономить своё время</h2>
-        <form class="trial-form" aria-labelledby="time-trial-heading">
-            <h3 class="trial-form__description" id="time-trial-heading">3-дневный пробный период с неограниченным
-                доступом ко всем возможностям</h3>
-            <label class="trial-form__label" for="time-email">Введите ваш email</label>
-            <input class="trial-form__input" id="time-email" name="email" type="email" autocomplete="email"
-                   placeholder="Введите ваш email"
-                   required>
-            <button class="button" type="button">Попробовать</button>
-        </form>
+        <div class="container">
+            <h2 id="time-heading">Начните экономить своё время</h2>
+            <form
+                    class="trial-form"
+                    aria-labelledby="time-trial-heading"
+            >
+                <h3
+                        class="trial-form__description"
+                        id="time-trial-heading"
+                >
+                    3-дневный пробный период с неограниченным доступом
+                    ко всем возможностям
+                </h3>
+                <label class="trial-form__label" for="time-email">
+                    Введите ваш email
+                </label>
+                <input
+                        class="trial-form__input"
+                        id="time-email"
+                        name="email"
+                        type="email"
+                        autocomplete="email"
+                        placeholder="Введите ваш email"
+                        required
+                />
+                <button class="button" type="button">
+                    Попробовать
+                </button>
+            </form>
+        </div>
     </section>
     <section class="reports" aria-labelledby="reports-heading">
-        <h2 id="reports-heading">Собираем единые отчёты по всем вашим магазинам</h2>
-        <p class="reports__intro">C Mpassistant вы сможете:</p>
-        <ul class="reports__list">
-            <li>Сможете видеть прибыль по всем магазинам и маркетплейсам в одном месте</li>
-            <li>Не потратите время на сбор данных из нескольких кабинетов или маркетплейсов</li>
-            <li>Добавите любое количество магазинов</li>
-        </ul>
+        <div class="container">
+            <h2 id="reports-heading">
+                Собираем единые отчёты по всем вашим магазинам
+            </h2>
+            <p class="reports__intro">C Mpassistant вы сможете:</p>
+            <ul class="reports__list">
+                <li>
+                    Сможете видеть прибыль по всем магазинам и
+                    маркетплейсам в одном месте
+                </li>
+                <li>
+                    Не потратите время на сбор данных из нескольких
+                    кабинетов или маркетплейсов
+                </li>
+                <li>Добавите любое количество магазинов</li>
+            </ul>
+        </div>
     </section>
     <section class="benefits" aria-labelledby="benefits-heading">
-        <h2 id="benefits-heading">Почему выбирают Mpassistant</h2>
-        <ul class="benefits__list">
-            <li class="benefits__item">
-                <h3 class="benefits__title">Точность данных</h3>
-                <p>Данные в отчётах сервиса полностью совпадает с данными ваших магазинов на маркетплейсах.</p>
-            </li>
-            <li class="benefits__item">
-                <h3 class="benefits__title">Большой функционал</h3>
-                <p>Полный набор инструментов для внутренней аналитики для Wildberries и Ozon. Более 10 полезных отчётов
-                    с удобными настраиваемыми фильтрами и параметрами.</p>
-            </li>
-            <li class="benefits__item">
-                <h3 class="benefits__title">Лёгкость освоения</h3>
-                <p>Наши отчёты просты и удобны. Все отчёты имеют подробные инструкции и видео, помогающие легко читать
-                    их и использовать.</p>
-            </li>
-            <li class="benefits__item">
-                <h3 class="benefits__title">Подходит всем</h3>
-                <p>Mpassistant создан селлерами для селлеров. Наш опыт в товарном бизнесе и разработке IT систем
-                    позволил создать полезный и удобный продукт, поэтому он подойдёт как для новичков, так и для опытных
-                    селлеров.</p>
-            </li>
-            <li class="benefits__item">
-                <h3 class="benefits__title">Конфиденциальность</h3>
-                <p>Ваша конфиденциальность для нас самый главный приоритет. Все ваши данные надёжно сохранены, а
-                    информация об этом записана в договоре-оферте. По желанию можем заключить дополнительное соглашение
-                    (NDA).</p>
-            </li>
-            <li class="benefits__item">
-                <h3 class="benefits__title">Служба заботы</h3>
-                <p>Наша служба заботы готова решить практически любые вопросы и в режиме 24/7.</p>
-            </li>
-        </ul>
+        <div class="container">
+            <h2 id="benefits-heading">Почему выбирают Mpassistant</h2>
+            <ul class="benefits__list">
+                <li class="benefits__item">
+                    <h3 class="benefits__title">Точность данных</h3>
+                    <p>
+                        Данные в отчётах сервиса полностью совпадает с
+                        данными ваших магазинов на маркетплейсах.
+                    </p>
+                </li>
+                <li class="benefits__item">
+                    <h3 class="benefits__title">Большой функционал</h3>
+                    <p>
+                        Полный набор инструментов для внутренней
+                        аналитики для Wildberries и Ozon. Более 10
+                        полезных отчётов с удобными настраиваемыми
+                        фильтрами и параметрами.
+                    </p>
+                </li>
+                <li class="benefits__item">
+                    <h3 class="benefits__title">Лёгкость освоения</h3>
+                    <p>
+                        Наши отчёты просты и удобны. Все отчёты имеют
+                        подробные инструкции и видео, помогающие легко
+                        читать их и использовать.
+                    </p>
+                </li>
+                <li class="benefits__item">
+                    <h3 class="benefits__title">Подходит всем</h3>
+                    <p>
+                        Mpassistant создан селлерами для селлеров. Наш
+                        опыт в товарном бизнесе и разработке IT систем
+                        позволил создать полезный и удобный продукт,
+                        поэтому он подойдёт как для новичков, так и для
+                        опытных селлеров.
+                    </p>
+                </li>
+                <li class="benefits__item">
+                    <h3 class="benefits__title">Конфиденциальность</h3>
+                    <p>
+                        Ваша конфиденциальность для нас самый главный
+                        приоритет. Все ваши данные надёжно сохранены, а
+                        информация об этом записана в договоре-оферте.
+                        По желанию можем заключить дополнительное
+                        соглашение (NDA).
+                    </p>
+                </li>
+                <li class="benefits__item">
+                    <h3 class="benefits__title">Служба заботы</h3>
+                    <p>
+                        Наша служба заботы готова решить практически
+                        любые вопросы и в режиме 24/7.
+                    </p>
+                </li>
+            </ul>
+        </div>
     </section>
     <section id="trial" aria-labelledby="trial-heading">
-        <h2 id="trial-heading">Попробуйте бесплатно</h2>
-        <form class="trial-form" aria-labelledby="trial-description">
-            <p class="trial-form__description" id="trial-description">3-дневный пробный период с неограниченным доступом
-                ко всем возможностям</p>
-            <label class="trial-form__label" for="trial-email">Введите ваш email</label>
-            <input class="trial-form__input" id="trial-email" name="email" type="email" autocomplete="email"
-                   placeholder="Введите ваш email"
-                   required>
-            <button class="button" type="button">Попробовать</button>
-        </form>
+        <div class="container">
+            <h2 id="trial-heading">Попробуйте бесплатно</h2>
+            <form
+                    class="trial-form"
+                    aria-labelledby="trial-description"
+            >
+                <p
+                        class="trial-form__description"
+                        id="trial-description"
+                >
+                    3-дневный пробный период с неограниченным доступом
+                    ко всем возможностям
+                </p>
+                <label class="trial-form__label" for="trial-email">
+                    Введите ваш email
+                </label>
+                <input
+                        class="trial-form__input"
+                        id="trial-email"
+                        name="email"
+                        type="email"
+                        autocomplete="email"
+                        placeholder="Введите ваш email"
+                        required
+                />
+                <button class="button" type="button">
+                    Попробовать
+                </button>
+            </form>
+        </div>
     </section>
-    <section class="pricing" id="pricing" aria-labelledby="pricing-heading">
-        <h2 id="pricing-heading">Выберите тариф</h2>
-        <fieldset class="pricing__period">
-            <legend>Период подписки</legend>
-            <label><input type="radio" name="billing-period" value="1"> 1 месяц</label>
-            <label><input type="radio" name="billing-period" value="3"> 3 месяца</label>
-            <label><input type="radio" name="billing-period" value="6"> 6 месяцев</label>
-            <label><input type="radio" name="billing-period" value="12"> 12 месяцев</label>
-        </fieldset>
-        <ul class="pricing__list">
-            <li class="pricing__item">
-                <h3 class="pricing__title">Стартовый</h3>
-                <p><strong class="pricing__price">4 990 ₽</strong></p>
-                <a class="button" href="#trial">Попробовать</a>
-                <button class="button button--secondary" type="button">Подробнее</button>
-            </li>
-            <li class="pricing__item">
-                <h3 class="pricing__title">Стартовый +</h3>
-                <p>4 491 ₽/мес</p>
-                <p class="pricing__discount">Скидка 10%</p>
-                <p><strong class="pricing__price">13 473 ₽</strong></p>
-                <a class="button" href="#trial">Попробовать</a>
-                <button class="button button--secondary" type="button">Подробнее</button>
-            </li>
-            <li class="pricing__item">
-                <h3 class="pricing__title">Профи</h3>
-                <p>4 241 ₽/мес</p>
-                <p class="pricing__discount">Скидка 15%</p>
-                <p><strong class="pricing__price">25 446 ₽</strong></p>
-                <a class="button" href="#trial">Попробовать</a>
-                <button class="button button--secondary" type="button">Подробнее</button>
-            </li>
-            <li class="pricing__item">
-                <h3 class="pricing__title">Начинающим селлерам с выручкой</h3>
-                <p>до 200 000 ₽/мес</p>
-                <p><strong class="pricing__price">Бесплатно</strong></p>
-                <a class="button" href="#trial">Попробовать</a>
-                <button class="button button--secondary" type="button">Подробнее</button>
-            </li>
-        </ul>
+    <section
+            class="pricing"
+            id="pricing"
+            aria-labelledby="pricing-heading"
+    >
+        <div class="container">
+            <h2 id="pricing-heading">Выберите тариф</h2>
+            <fieldset class="pricing__period">
+                <legend>Период подписки</legend>
+                <label>
+                    <input
+                            type="radio"
+                            name="billing-period"
+                            value="1"
+                    />
+                    1 месяц
+                </label>
+                <label>
+                    <input
+                            type="radio"
+                            name="billing-period"
+                            value="3"
+                    />
+                    3 месяца
+                </label>
+                <label>
+                    <input
+                            type="radio"
+                            name="billing-period"
+                            value="6"
+                    />
+                    6 месяцев
+                </label>
+                <label>
+                    <input
+                            type="radio"
+                            name="billing-period"
+                            value="12"
+                    />
+                    12 месяцев
+                </label>
+            </fieldset>
+            <ul class="pricing__list">
+                <li class="pricing__item">
+                    <h3 class="pricing__title">Стартовый</h3>
+                    <p>
+                        <strong class="pricing__price">4 990 ₽</strong>
+                    </p>
+                    <a class="button" href="#trial">Попробовать</a>
+                    <button
+                            class="button button--secondary"
+                            type="button"
+                    >
+                        Подробнее
+                    </button>
+                </li>
+                <li class="pricing__item">
+                    <h3 class="pricing__title">Стартовый +</h3>
+                    <p>4 491 ₽/мес</p>
+                    <p class="pricing__discount">Скидка 10%</p>
+                    <p>
+                        <strong class="pricing__price">13 473 ₽</strong>
+                    </p>
+                    <a class="button" href="#trial">Попробовать</a>
+                    <button
+                            class="button button--secondary"
+                            type="button"
+                    >
+                        Подробнее
+                    </button>
+                </li>
+                <li class="pricing__item">
+                    <h3 class="pricing__title">Профи</h3>
+                    <p>4 241 ₽/мес</p>
+                    <p class="pricing__discount">Скидка 15%</p>
+                    <p>
+                        <strong class="pricing__price">25 446 ₽</strong>
+                    </p>
+                    <a class="button" href="#trial">Попробовать</a>
+                    <button
+                            class="button button--secondary"
+                            type="button"
+                    >
+                        Подробнее
+                    </button>
+                </li>
+                <li class="pricing__item">
+                    <h3 class="pricing__title">
+                        Начинающим селлерам с выручкой
+                    </h3>
+                    <p>до 200 000 ₽/мес</p>
+                    <p>
+                        <strong class="pricing__price">
+                            Бесплатно
+                        </strong>
+                    </p>
+                    <a class="button" href="#trial">Попробовать</a>
+                    <button
+                            class="button button--secondary"
+                            type="button"
+                    >
+                        Подробнее
+                    </button>
+                </li>
+            </ul>
+        </div>
     </section>
     <section id="reviews" aria-labelledby="reviews-heading">
-        <h2 id="reviews-heading">Отзывы</h2>
-        <figure class="review">
-            <blockquote>
-                <p>Изначально нашёл сервис в поиске Яндекса, когда искал калькулятор unit-экономики товара. Калькулятор
-                    полностью устроил и решил пользоваться самим сайтом. К тому же это было для меня бесплатно, так как
-                    проходил по условиям бесплатного доступа: оборот до 200т.р в месяц. Этого не встретить на других
-                    сайтах, это возможность развиваться на ранних этапах, без вложения огромных сумм для доступа к
-                    подобным сайтам.</p>
-                <p>Радует поддержка, получал ответы на всевопросы, выслушивали все мои рекомендации по улучшению
-                    сервиса. Какие‑то из них уже внедрены! Сервис ориентирован на аналитику своего магазина, продаж.
-                    Удобно анализировать финансовую составляющую.</p>
-                <p>Бывают акции, когда можно хорошо сэкономить на подписке.</p>
-                <p>Желаю сервису развития и успехов!</p>
-            </blockquote>
-            <figcaption class="review__author">— Алексей</figcaption>
-        </figure>
-        <figure class="review">
-            <blockquote>
-                <p>Функционал сервиса, тот что есть — полностью устраивает. Хочется ещё автобиддер по ставкам в
-                    рекламных компаниях и цены вам не будет!</p>
-            </blockquote>
-            <figcaption class="review__author">— Владислав</figcaption>
-        </figure>
+        <div class="container">
+            <h2 id="reviews-heading">Отзывы</h2>
+            <figure class="review">
+                <blockquote>
+                    <p>
+                        Изначально нашёл сервис в поиске Яндекса, когда
+                        искал калькулятор unit-экономики товара.
+                        Калькулятор полностью устроил и решил
+                        пользоваться самим сайтом. К тому же это было
+                        для меня бесплатно, так как проходил по условиям
+                        бесплатного доступа: оборот до 200т.р в месяц.
+                        Этого не встретить на других сайтах, это
+                        возможность развиваться на ранних этапах, без
+                        вложения огромных сумм для доступа к подобным
+                        сайтам.
+                    </p>
+                    <p>
+                        Радует поддержка, получал ответы на всевопросы,
+                        выслушивали все мои рекомендации по улучшению
+                        сервиса. Какие‑то из них уже внедрены! Сервис
+                        ориентирован на аналитику своего магазина,
+                        продаж. Удобно анализировать финансовую
+                        составляющую.
+                    </p>
+                    <p>
+                        Бывают акции, когда можно хорошо сэкономить на
+                        подписке.
+                    </p>
+                    <p>Желаю сервису развития и успехов!</p>
+                </blockquote>
+                <figcaption class="review__author">
+                    — Алексей
+                </figcaption>
+            </figure>
+            <figure class="review">
+                <blockquote>
+                    <p>
+                        Функционал сервиса, тот что есть — полностью
+                        устраивает. Хочется ещё автобиддер по ставкам в
+                        рекламных компаниях и цены вам не будет!
+                    </p>
+                </blockquote>
+                <figcaption class="review__author">
+                    — Владислав
+                </figcaption>
+            </figure>
+        </div>
     </section>
 </main>
 <footer class="site-footer">
-    <a class="brand" href="index.html" aria-label="Mpassistant — главная">Mpassistant</a>
-    <p class="site-footer__description">Аналитика и оцифровка продаж Wildberries и Ozon</p>
-    <nav aria-label="Сервис">
-        <h2>Сервис</h2>
-        <ul>
-            <li><a href="#about">Для кого</a></li>
-            <li><a href="#features">Возможности</a></li>
-            <li><a href="#pricing">Тарифы</a></li>
-        </ul>
-    </nav>
-    <section aria-labelledby="clients-heading">
-        <h2 id="clients-heading">Клиентам</h2>
-        <ul>
-            <li>
-                <button class="button button--secondary" type="button">Вход</button>
-            </li>
-            <li><a href="#trial">Регистрация</a></li>
-            <li>
-                <button class="button" type="button">Восстановление пароля</button>
-            </li>
-        </ul>
-    </section>
-    <section aria-labelledby="documents-heading">
-        <h2 id="documents-heading">Документы</h2>
-        <ul>
-            <li><a>Пользовательское соглашение</a></li>
-            <li><a>Политика конфиденциальности</a></li>
-            <li><a>Публичная оферта</a></li>
-            <li><a>Использование cookie</a></li>
-            <li><a>Техническая поддержка</a></li>
-        </ul>
-    </section>
-    <p><small>© 2022–2023 Mpassistant</small></p>
-    <p><small>Информация, размещённая на сайте, не является публичной офертой</small></p>
-    <p><small>Редизайн сайта Turkuletsdesign</small></p>
+    <div class="container site-footer__inner">
+        <a
+                class="brand"
+                href="index.html"
+                aria-label="Mpassistant — главная"
+        >
+            Mpassistant
+        </a>
+        <p class="site-footer__description">
+            Аналитика и оцифровка продаж Wildberries и Ozon
+        </p>
+        <nav aria-label="Сервис">
+            <h2>Сервис</h2>
+            <ul>
+                <li><a href="#about">Для кого</a></li>
+                <li><a href="#features">Возможности</a></li>
+                <li><a href="#pricing">Тарифы</a></li>
+            </ul>
+        </nav>
+        <section aria-labelledby="clients-heading">
+            <h2 id="clients-heading">Клиентам</h2>
+            <ul>
+                <li>
+                    <button
+                            class="button button--secondary"
+                            type="button"
+                    >
+                        Вход
+                    </button>
+                </li>
+                <li><a href="#trial">Регистрация</a></li>
+                <li>
+                    <button class="button" type="button">
+                        Восстановление пароля
+                    </button>
+                </li>
+            </ul>
+        </section>
+        <section aria-labelledby="documents-heading">
+            <h2 id="documents-heading">Документы</h2>
+            <ul>
+                <li><a>Пользовательское соглашение</a></li>
+                <li><a>Политика конфиденциальности</a></li>
+                <li><a>Публичная оферта</a></li>
+                <li><a>Использование cookie</a></li>
+                <li><a>Техническая поддержка</a></li>
+            </ul>
+        </section>
+        <p><small>© 2022–2023 Mpassistant</small></p>
+        <p>
+            <small>
+                Информация, размещённая на сайте, не является публичной
+                офертой
+            </small>
+        </p>
+        <p><small>Редизайн сайта Turkuletsdesign</small></p>
+    </div>
 </footer>
 </body>
 </html>
