@@ -16,22 +16,31 @@
 <body>
 <header class="site-header">
     <div class="container site-header__inner">
-        <a
-                class="brand"
-                href="index.html"
-                aria-label="Mpassistant — главная"
-        >
-            <img
-                    class="brand__image"
-                    src="images/logo.svg"
-                    alt="Mpassistant"
-                    width="260"
-                    height="25"
-            />
-        </a>
-        <p class="site-header__description">
-            Аналитика и оцифровка продаж Wildberries и Ozon
-        </p>
+        <div class="site-header__brand">
+            <a
+                    class="brand"
+                    href="index.html"
+                    aria-label="Mpassistant — главная"
+            >
+                <img
+                        class="brand__image"
+                        src="images/logo.svg"
+                        alt="Mpassistant"
+                        width="260"
+                        height="25"
+                />
+            </a>
+            <p class="site-header__description">
+                Аналитика и оцифровка продаж
+                <br/>
+                <span class="marketplace marketplace--wildberries">
+                            Wildberries
+                        </span>
+                и
+                <span class="marketplace marketplace--ozon">Ozon</span>
+            </p>
+        </div>
+
         <nav aria-label="Основная навигация">
             <ul>
                 <li><a href="#about">О нас</a></li>
@@ -39,7 +48,8 @@
                 <li><a href="#pricing">Тарифы</a></li>
             </ul>
         </nav>
-        <button class="button button--secondary" type="button">
+        <button class="site-header__login" type="button">
+            <img src="images/login.svg" alt="" width="14" height="13"/>
             Вход
         </button>
         <a class="button" href="#trial">Зарегистрироваться</a>
@@ -48,16 +58,61 @@
 <main>
     <section class="hero" aria-labelledby="hero-heading">
         <div class="container">
-            <h1 class="hero__title" id="hero-heading">
-                Внутренняя аналитика и
-                <span class="hero__accent">
-                            финансовый учёт для бизнеса на маркетплейсах
-                        </span>
-            </h1>
-            <p class="hero__description">
-                Увеличивай прибыль, автоматизируй рутину и экономь время
-                на сборе и анализе отчётов
-            </p>
+            <div class="hero__content">
+                <h1 class="hero__title" id="hero-heading">
+                            <span class="hero__green">
+                                Внутренняя аналитика
+                            </span>
+
+                    и
+                    <span class="hero__accent">финансовый учёт</span>
+                    для бизнеса на маркетплейсах
+                    <img
+                            class="hero__marketplaces"
+                            src="images/hero-marketplaces.png"
+                            width="222"
+                            height="96"
+                            alt="Ozon и Wildberries"
+                    />
+                </h1>
+                <p class="hero__description">
+                    Увеличивай прибыль, автоматизируй рутину и экономь
+                    время на сборе и анализе отчётов
+                </p>
+                <form
+                        class="trial-form"
+                        aria-labelledby="hero-trial-heading"
+                >
+                    <h2
+                            class="trial-form__description"
+                            id="hero-trial-heading"
+                    >
+                        Начните свой 3-дневный пробный период с
+                        неограниченным доступом ко всем возможностям
+                    </h2>
+                    <label
+                            class="trial-form__label sr-only"
+                            for="hero-email"
+                    >
+                        Введите ваш email
+                    </label>
+                    <div class="trial-form__controls">
+                        <input
+                                class="trial-form__input"
+                                id="hero-email"
+                                name="email"
+                                type="email"
+                                autocomplete="email"
+                                placeholder="Введите ваш email"
+                                required=""
+                        />
+                        <button class="button" type="button">
+                            Попробовать
+                        </button>
+                    </div>
+                </form>
+            </div>
+
             <div class="hero__illustration">
                 <img
                         class="hero__chart"
@@ -93,54 +148,35 @@
                     />
                 </picture>
             </div>
-            <form
-                    class="trial-form"
-                    aria-labelledby="hero-trial-heading"
-            >
-                <h2
-                        class="trial-form__description"
-                        id="hero-trial-heading"
-                >
-                    Начните свой 3-дневный пробный период с
-                    неограниченным доступом ко всем возможностям
-                </h2>
-                <label class="trial-form__label" for="hero-email">
-                    Введите ваш email
-                </label>
-                <input
-                        class="trial-form__input"
-                        id="hero-email"
-                        name="email"
-                        type="email"
-                        autocomplete="email"
-                        placeholder="Введите ваш email"
-                        required
-                />
-                <button class="button" type="button">
-                    Попробовать
-                </button>
-            </form>
         </div>
     </section>
     <section id="about" aria-labelledby="about-heading">
         <div class="container">
-            <h2 id="about-heading">О нас</h2>
+            <h2 id="about-heading" class="sr-only">О нас</h2>
             <dl class="statistics">
-                <dt class="statistics__value">777</dt>
-                <dd>
-                    Увеличивай прибыль, автоматизируй рутину и экономь
-                    время на сборе и анализе отчётов
-                </dd>
-                <dt class="statistics__value">5</dt>
-                <dd>
-                    Увеличивай прибыль, автоматизируй рутину и экономь
-                    время на сборе и анализе отчётов
-                </dd>
-                <dt class="statistics__value">100 000</dt>
-                <dd>
-                    Увеличивай прибыль, автоматизируй рутину и экономь
-                    время на сборе и анализе отчётов
-                </dd>
+                <div class="statistics__item">
+                    <dt class="statistics__value">777</dt>
+                    <dd>
+                        Увеличивай прибыль, автоматизируй рутину и
+                        экономь время на сборе и анализе отчётов
+                    </dd>
+                </div>
+
+                <div class="statistics__item">
+                    <dt class="statistics__value">5</dt>
+                    <dd>
+                        Увеличивай прибыль, автоматизируй рутину и
+                        экономь время на сборе и анализе отчётов
+                    </dd>
+                </div>
+
+                <div class="statistics__item">
+                    <dt class="statistics__value">100 000</dt>
+                    <dd>
+                        Увеличивай прибыль, автоматизируй рутину и
+                        экономь время на сборе и анализе отчётов
+                    </dd>
+                </div>
             </dl>
         </div>
     </section>
@@ -150,83 +186,94 @@
             aria-labelledby="features-heading"
     >
         <div class="container">
-            <h2 id="features-heading">Возможности сервиса</h2>
-            <picture>
-                <source
-                        srcset="images/marketplaces.webp"
-                        type="image/webp"
-                />
-                <img
-                        class="features__marketplaces"
-                        src="images/marketplaces.png"
-                        alt="Маркетплейсы: Яндекс Маркет, Ozon и Wildberries"
-                        width="337"
-                        height="96"
-                        loading="lazy"
-                />
-            </picture>
-            <ul class="features__categories">
-                <li>Финансовая аналитика</li>
-                <li>Товарная аналитика</li>
-                <li>Аналитика внутренней рекламы</li>
-                <li>Статистика</li>
-                <li>Инструменты</li>
-            </ul>
-            <h3>Инструменты для финансовой аналитики</h3>
-            <ul>
-                <li>Отчёт о прибылях и убытках (P&amp;L)</li>
-                <li>Отчёт о движении денежных средств (ДДС)</li>
-                <li>Журнал операций</li>
-                <li>Сводка продаж</li>
-                <li>Учёт самовыкупов</li>
-            </ul>
-            <picture>
-                <source
-                        srcset="images/financial-report.webp"
-                        type="image/webp"
-                />
-                <img
-                        class="features__report"
-                        src="images/financial-report.jpg"
-                        alt="Пример финансового отчёта: выручка, расходы и прибыль по периодам"
-                        width="700"
-                        height="450"
-                        loading="lazy"
-                />
-            </picture>
-            <a class="button" href="#trial">Попробовать бесплатно</a>
+            <div class="features__heading">
+                <h2 id="features-heading">Возможности сервиса</h2>
+            </div>
+
+            <div class="features__panel">
+                <ul class="features__categories">
+                    <li class="features__category--active">
+                        Финансовая аналитика
+                    </li>
+                    <li>Товарная аналитика</li>
+                    <li>Аналитика внутренней рекламы</li>
+                    <li>Статистика</li>
+                    <li>Инструменты</li>
+                </ul>
+                <div class="features__content">
+                    <div class="features__description">
+                        <h3>Инструменты для финансовой аналитики</h3>
+                        <ul>
+                            <li>
+                                Отчёт о прибылях и убытках (P&amp;L)
+                            </li>
+                            <li>
+                                Отчёт о движении денежных средств (ДДС)
+                            </li>
+                            <li>Журнал операций</li>
+                            <li>Сводка продаж</li>
+                            <li>Учёт самовыкупов</li>
+                        </ul>
+                        <a class="button" href="#trial">
+                            Попробовать бесплатно
+                        </a>
+                    </div>
+                    <picture>
+                        <source
+                                srcset="images/financial-report.webp"
+                                type="image/webp"
+                        />
+                        <img
+                                class="features__report"
+                                src="images/financial-report.jpg"
+                                alt="Пример финансового отчёта: выручка, расходы и прибыль по периодам"
+                                width="700"
+                                height="450"
+                                loading="lazy"
+                        />
+                    </picture>
+                </div>
+            </div>
         </div>
     </section>
     <section class="trial-banner" aria-labelledby="time-heading">
         <div class="container">
-            <h2 id="time-heading">Начните экономить своё время</h2>
-            <form
-                    class="trial-form"
-                    aria-labelledby="time-trial-heading"
-            >
-                <h3
-                        class="trial-form__description"
-                        id="time-trial-heading"
+            <div class="trial-banner__content">
+                <h2 id="time-heading">Начните экономить своё время</h2>
+                <form
+                        class="trial-form"
+                        aria-labelledby="time-trial-heading"
                 >
-                    3-дневный пробный период с неограниченным доступом
-                    ко всем возможностям
-                </h3>
-                <label class="trial-form__label" for="time-email">
-                    Введите ваш email
-                </label>
-                <input
-                        class="trial-form__input"
-                        id="time-email"
-                        name="email"
-                        type="email"
-                        autocomplete="email"
-                        placeholder="Введите ваш email"
-                        required
-                />
-                <button class="button" type="button">
-                    Попробовать
-                </button>
-            </form>
+                    <h3
+                            class="trial-form__description"
+                            id="time-trial-heading"
+                    >
+                        3-дневный пробный период с неограниченным
+                        доступом ко всем возможностям
+                    </h3>
+                    <label
+                            class="trial-form__label sr-only"
+                            for="time-email"
+                    >
+                        Введите ваш email
+                    </label>
+                    <div class="trial-form__controls">
+                        <input
+                                class="trial-form__input"
+                                id="time-email"
+                                name="email"
+                                type="email"
+                                autocomplete="email"
+                                placeholder="Введите ваш email"
+                                required=""
+                        />
+                        <button class="button" type="button">
+                            Попробовать
+                        </button>
+                    </div>
+                </form>
+            </div>
+
             <div class="trial-banner__illustration">
                 <picture>
                     <source
@@ -242,20 +289,14 @@
                             loading="lazy"
                     />
                 </picture>
-                <picture>
-                    <source
-                            srcset="images/trial-woman.webp"
-                            type="image/webp"
-                    />
-                    <img
-                            class="trial-banner__person"
-                            src="images/trial-woman.png"
-                            alt=""
-                            width="800"
-                            height="533"
-                            loading="lazy"
-                    />
-                </picture>
+                <img
+                        class="trial-banner__person"
+                        src="images/trial-person-crop.webp"
+                        alt=""
+                        width="374"
+                        height="384"
+                        loading="lazy"
+                />
             </div>
         </div>
     </section>
@@ -264,32 +305,32 @@
             <h2 id="reports-heading">
                 Собираем единые отчёты по всем вашим магазинам
             </h2>
-            <p class="reports__intro">C Mpassistant вы сможете:</p>
-            <ul class="reports__list">
-                <li>
-                    Сможете видеть прибыль по всем магазинам и
-                    маркетплейсам в одном месте
-                </li>
-                <li>
-                    Не потратите время на сбор данных из нескольких
-                    кабинетов или маркетплейсов
-                </li>
-                <li>Добавите любое количество магазинов</li>
-            </ul>
-            <picture>
-                <source
-                        srcset="images/reports-woman.webp"
-                        type="image/webp"
-                />
+            <div class="reports__content">
+                <div class="reports__description">
+                    <p class="reports__intro">
+                        C Mpassistant вы сможете:
+                    </p>
+                    <ul class="reports__list">
+                        <li>
+                            Сможете видеть прибыль по всем магазинам и
+                            маркетплейсам в одном месте
+                        </li>
+                        <li>
+                            Не потратите время на сбор данных из
+                            нескольких кабинетов или маркетплейсов
+                        </li>
+                        <li>Добавите любое количество магазинов</li>
+                    </ul>
+                </div>
                 <img
-                        class="reports__image"
-                        src="images/reports-woman.png"
-                        alt=""
-                        width="996"
-                        height="664"
+                        class="reports__diagram"
+                        src="images/stores-diagram.svg"
+                        alt="Данные четырёх магазинов Wildberries и Ozon объединяются в Mpassistant"
+                        width="690"
+                        height="416"
                         loading="lazy"
                 />
-            </picture>
+            </div>
         </div>
     </section>
     <section class="benefits" aria-labelledby="benefits-heading">
@@ -297,30 +338,38 @@
             <h2 id="benefits-heading">Почему выбирают Mpassistant</h2>
             <ul class="benefits__list">
                 <li class="benefits__item">
-                    <img
-                            class="benefits__icon"
-                            src="images/accuracy.svg"
-                            alt=""
-                            width="35"
-                            height="35"
-                            loading="lazy"
-                    />
-                    <h3 class="benefits__title">Точность данных</h3>
+                    <div class="benefits__heading">
+                        <img
+                                class="benefits__icon"
+                                src="images/accuracy.svg"
+                                alt=""
+                                width="35"
+                                height="35"
+                                loading="lazy"
+                        />
+                        <h3 class="benefits__title">Точность данных</h3>
+                    </div>
+
                     <p>
                         Данные в отчётах сервиса полностью совпадает с
                         данными ваших магазинов на маркетплейсах.
                     </p>
                 </li>
                 <li class="benefits__item">
-                    <img
-                            class="benefits__icon"
-                            src="images/analytics.svg"
-                            alt=""
-                            width="55"
-                            height="34"
-                            loading="lazy"
-                    />
-                    <h3 class="benefits__title">Большой функционал</h3>
+                    <div class="benefits__heading">
+                        <img
+                                class="benefits__icon"
+                                src="images/analytics.svg"
+                                alt=""
+                                width="55"
+                                height="34"
+                                loading="lazy"
+                        />
+                        <h3 class="benefits__title">
+                            Большой функционал
+                        </h3>
+                    </div>
+
                     <p>
                         Полный набор инструментов для внутренней
                         аналитики для Wildberries и Ozon. Более 10
@@ -329,15 +378,20 @@
                     </p>
                 </li>
                 <li class="benefits__item">
-                    <img
-                            class="benefits__icon"
-                            src="images/manual.svg"
-                            alt=""
-                            width="40"
-                            height="32"
-                            loading="lazy"
-                    />
-                    <h3 class="benefits__title">Лёгкость освоения</h3>
+                    <div class="benefits__heading">
+                        <img
+                                class="benefits__icon"
+                                src="images/manual.svg"
+                                alt=""
+                                width="40"
+                                height="32"
+                                loading="lazy"
+                        />
+                        <h3 class="benefits__title">
+                            Лёгкость освоения
+                        </h3>
+                    </div>
+
                     <p>
                         Наши отчёты просты и удобны. Все отчёты имеют
                         подробные инструкции и видео, помогающие легко
@@ -345,15 +399,18 @@
                     </p>
                 </li>
                 <li class="benefits__item">
-                    <img
-                            class="benefits__icon"
-                            src="images/experience.svg"
-                            alt=""
-                            width="34"
-                            height="45"
-                            loading="lazy"
-                    />
-                    <h3 class="benefits__title">Подходит всем</h3>
+                    <div class="benefits__heading">
+                        <img
+                                class="benefits__icon"
+                                src="images/experience.svg"
+                                alt=""
+                                width="34"
+                                height="45"
+                                loading="lazy"
+                        />
+                        <h3 class="benefits__title">Подходит всем</h3>
+                    </div>
+
                     <p>
                         Mpassistant создан селлерами для селлеров. Наш
                         опыт в товарном бизнесе и разработке IT систем
@@ -363,15 +420,20 @@
                     </p>
                 </li>
                 <li class="benefits__item">
-                    <img
-                            class="benefits__icon"
-                            src="images/privacy.svg"
-                            alt=""
-                            width="36"
-                            height="42"
-                            loading="lazy"
-                    />
-                    <h3 class="benefits__title">Конфиденциальность</h3>
+                    <div class="benefits__heading">
+                        <img
+                                class="benefits__icon"
+                                src="images/privacy.svg"
+                                alt=""
+                                width="36"
+                                height="42"
+                                loading="lazy"
+                        />
+                        <h3 class="benefits__title">
+                            Конфиденциальность
+                        </h3>
+                    </div>
+
                     <p>
                         Ваша конфиденциальность для нас самый главный
                         приоритет. Все ваши данные надёжно сохранены, а
@@ -381,15 +443,18 @@
                     </p>
                 </li>
                 <li class="benefits__item">
-                    <img
-                            class="benefits__icon"
-                            src="images/support.svg"
-                            alt=""
-                            width="38"
-                            height="38"
-                            loading="lazy"
-                    />
-                    <h3 class="benefits__title">Служба заботы</h3>
+                    <div class="benefits__heading">
+                        <img
+                                class="benefits__icon"
+                                src="images/support.svg"
+                                alt=""
+                                width="38"
+                                height="38"
+                                loading="lazy"
+                        />
+                        <h3 class="benefits__title">Служба заботы</h3>
+                    </div>
+
                     <p>
                         Наша служба заботы готова решить практически
                         любые вопросы и в режиме 24/7.
@@ -404,63 +469,76 @@
             aria-labelledby="trial-heading"
     >
         <div class="container">
-            <h2 id="trial-heading">Попробуйте бесплатно</h2>
-            <form
-                    class="trial-form"
-                    aria-labelledby="trial-description"
-            >
-                <p
-                        class="trial-form__description"
-                        id="trial-description"
+            <div class="trial-banner__content">
+                <h2 id="trial-heading">Попробуйте бесплатно</h2>
+                <form
+                        class="trial-form"
+                        aria-labelledby="trial-description"
                 >
-                    3-дневный пробный период с неограниченным доступом
-                    ко всем возможностям
-                </p>
-                <label class="trial-form__label" for="trial-email">
-                    Введите ваш email
-                </label>
-                <input
-                        class="trial-form__input"
-                        id="trial-email"
-                        name="email"
-                        type="email"
-                        autocomplete="email"
-                        placeholder="Введите ваш email"
-                        required
-                />
-                <button class="button" type="button">
-                    Попробовать
-                </button>
-            </form>
+                    <p
+                            class="trial-form__description"
+                            id="trial-description"
+                    >
+                        3-дневный пробный период с неограниченным
+                        доступом ко всем возможностям
+                    </p>
+                    <label
+                            class="trial-form__label sr-only"
+                            for="trial-email"
+                    >
+                        Введите ваш email
+                    </label>
+                    <div class="trial-form__controls">
+                        <input
+                                class="trial-form__input"
+                                id="trial-email"
+                                name="email"
+                                type="email"
+                                autocomplete="email"
+                                placeholder="Введите ваш email"
+                                required=""
+                        />
+                        <button class="button" type="button">
+                            Попробовать
+                        </button>
+                    </div>
+                </form>
+            </div>
+
             <div class="trial-banner__illustration">
-                <picture>
-                    <source
-                            srcset="images/gift.webp"
-                            type="image/webp"
-                    />
+                <img
+                        class="trial-banner__person"
+                        src="images/gift-person-crop.webp"
+                        alt=""
+                        width="374"
+                        height="384"
+                        loading="lazy"
+                />
+
+                <div class="trial-banner__decorations">
+                    <picture>
+                        <source
+                                srcset="images/gift.webp"
+                                type="image/webp"
+                        />
+                        <img
+                                class="trial-banner__gift"
+                                src="images/gift.png"
+                                alt=""
+                                width="502"
+                                height="502"
+                                loading="lazy"
+                        />
+                    </picture>
                     <img
-                            class="trial-banner__gift"
-                            src="images/gift.png"
+                            class="trial-banner__gift trial-banner__gift--small"
+                            src="images/gift.webp"
                             alt=""
                             width="502"
                             height="502"
                             loading="lazy"
                     />
-                </picture>
-                <picture>
-                    <source
-                            srcset="images/trial-woman-gift.webp"
-                            type="image/webp"
-                    />
-                    <img
-                            class="trial-banner__person"
-                            src="images/trial-woman-gift.png"
-                            alt=""
-                            width="800"
-                            height="533"
-                            loading="lazy"
-                    />
-                </picture>
+                </div>
             </div>
         </div>
     </section>
@@ -472,101 +550,162 @@
         <div class="container">
             <h2 id="pricing-heading">Выберите тариф</h2>
             <fieldset class="pricing__period">
-                <legend>Период подписки</legend>
+                <legend class="sr-only">Период подписки</legend>
                 <label>
                     <input
                             type="radio"
                             name="billing-period"
                             value="1"
+                            class="sr-only"
+                            checked=""
                     />
-                    1 месяц
+                    <span class="pricing__period-text">1 месяц</span>
                 </label>
                 <label>
                     <input
                             type="radio"
                             name="billing-period"
                             value="3"
+                            class="sr-only"
                     />
-                    3 месяца
+                    <span class="pricing__period-text">3 месяца</span>
                 </label>
                 <label>
                     <input
                             type="radio"
                             name="billing-period"
                             value="6"
+                            class="sr-only"
                     />
-                    6 месяцев
+                    <span class="pricing__period-text">6 месяцев</span>
                 </label>
                 <label>
                     <input
                             type="radio"
                             name="billing-period"
                             value="12"
+                            class="sr-only"
                     />
-                    12 месяцев
+                    <span class="pricing__period-text">12 месяцев</span>
                 </label>
             </fieldset>
             <ul class="pricing__list">
-                <li class="pricing__item">
+                <li class="pricing__item pricing__item--starter">
                     <h3 class="pricing__title">Стартовый</h3>
-                    <p>
-                        <strong class="pricing__price">4 990 ₽</strong>
-                    </p>
-                    <a class="button" href="#trial">Попробовать</a>
-                    <button
-                            class="button button--secondary"
-                            type="button"
-                    >
-                        Подробнее
-                    </button>
+
+                    <div class="pricing__summary">
+                        <p>
+                            <strong class="pricing__price">
+                                4 990 ₽
+                            </strong>
+                        </p>
+                    </div>
+                    <div class="pricing__actions">
+                        <a class="button" href="#trial">Попробовать</a>
+                        <button
+                                class="button button--secondary"
+                                type="button"
+                        >
+                            Подробнее
+                        </button>
+                    </div>
                 </li>
-                <li class="pricing__item">
+                <li class="pricing__item pricing__item--plus">
                     <h3 class="pricing__title">Стартовый +</h3>
-                    <p>4 491 ₽/мес</p>
-                    <p class="pricing__discount">Скидка 10%</p>
-                    <p>
-                        <strong class="pricing__price">13 473 ₽</strong>
-                    </p>
-                    <a class="button" href="#trial">Попробовать</a>
-                    <button
-                            class="button button--secondary"
-                            type="button"
-                    >
-                        Подробнее
-                    </button>
+
+                    <p class="pricing__discount">− 10%</p>
+
+                    <div class="pricing__summary">
+                        <p>4 491 ₽/мес</p>
+                        <p>
+                            <strong class="pricing__price">
+                                13 473 ₽
+                            </strong>
+                        </p>
+                    </div>
+                    <div class="pricing__actions">
+                        <a class="button" href="#trial">Попробовать</a>
+                        <button
+                                class="button button--secondary"
+                                type="button"
+                        >
+                            Подробнее
+                        </button>
+                    </div>
                 </li>
-                <li class="pricing__item">
+                <li class="pricing__item pricing__item--pro">
                     <h3 class="pricing__title">Профи</h3>
-                    <p>4 241 ₽/мес</p>
-                    <p class="pricing__discount">Скидка 15%</p>
-                    <p>
-                        <strong class="pricing__price">25 446 ₽</strong>
-                    </p>
-                    <a class="button" href="#trial">Попробовать</a>
-                    <button
-                            class="button button--secondary"
-                            type="button"
-                    >
-                        Подробнее
-                    </button>
+
+                    <p class="pricing__discount">− 15%</p>
+
+                    <div class="pricing__summary">
+                        <p>4 241 ₽/мес</p>
+                        <p>
+                            <strong class="pricing__price">
+                                25 446 ₽
+                            </strong>
+                        </p>
+                    </div>
+                    <div class="pricing__actions">
+                        <a class="button" href="#trial">Попробовать</a>
+                        <button
+                                class="button button--secondary"
+                                type="button"
+                        >
+                            Подробнее
+                        </button>
+                    </div>
                 </li>
-                <li class="pricing__item">
-                    <h3 class="pricing__title">
-                        Начинающим селлерам с выручкой
-                    </h3>
-                    <p>до 200 000 ₽/мес</p>
-                    <p>
-                        <strong class="pricing__price">
-                            Бесплатно
-                        </strong>
-                    </p>
-                    <a class="button" href="#trial">Попробовать</a>
-                    <button
-                            class="button button--secondary"
-                            type="button"
-                    >
-                        Подробнее
-                    </button>
+                <li class="pricing__item pricing__item--free free-plan">
+                    <div class="free-plan__content">
+                        <h3 class="pricing__title">
+                            Начинающим селлерам с выручкой
+                        </h3>
+                        <p>до 200 000 ₽/мес</p>
+                        <p>
+                            <strong class="pricing__price">
+                                Бесплатно
+                            </strong>
+                        </p>
+                        <div class="pricing__actions">
+                            <a class="button" href="#trial">
+                                Попробовать
+                            </a>
+                            <button
+                                    class="button button--secondary"
+                                    type="button"
+                            >
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                    <img
+                            class="free-plan__person"
+                            src="images/free-person-crop.webp"
+                            alt=""
+                            width="676"
+                            height="451"
+                            loading="lazy"
+                    />
+
+                    <div class="free-plan__decorations">
+                        <img
+                                class="free-plan__gift free-plan__gift--small"
+                                src="images/gift.webp"
+                                alt=""
+                                width="502"
+                                height="502"
+                                loading="lazy"
+                        />
+                        <img
+                                class="free-plan__gift free-plan__gift--large"
+                                src="images/gift.webp"
+                                alt=""
+                                width="502"
+                                height="502"
+                                loading="lazy"
+                        />
+                    </div>
                 </li>
             </ul>
         </div>
@@ -574,157 +713,248 @@
     <section id="reviews" aria-labelledby="reviews-heading">
         <div class="container">
             <h2 id="reviews-heading">Отзывы</h2>
-            <figure class="review">
-                <blockquote>
-                    <p>
-                        Изначально нашёл сервис в поиске Яндекса, когда
-                        искал калькулятор unit-экономики товара.
-                        Калькулятор полностью устроил и решил
-                        пользоваться самим сайтом. К тому же это было
-                        для меня бесплатно, так как проходил по условиям
-                        бесплатного доступа: оборот до 200т.р в месяц.
-                        Этого не встретить на других сайтах, это
-                        возможность развиваться на ранних этапах, без
-                        вложения огромных сумм для доступа к подобным
-                        сайтам.
-                    </p>
-                    <p>
-                        Радует поддержка, получал ответы на всевопросы,
-                        выслушивали все мои рекомендации по улучшению
-                        сервиса. Какие‑то из них уже внедрены! Сервис
-                        ориентирован на аналитику своего магазина,
-                        продаж. Удобно анализировать финансовую
-                        составляющую.
-                    </p>
-                    <p>
-                        Бывают акции, когда можно хорошо сэкономить на
-                        подписке.
-                    </p>
-                    <p>Желаю сервису развития и успехов!</p>
-                </blockquote>
-                <figcaption class="review__author">
-                    — Алексей
-                </figcaption>
-            </figure>
-            <figure class="review">
-                <blockquote>
-                    <p>
-                        Функционал сервиса, тот что есть — полностью
-                        устраивает. Хочется ещё автобиддер по ставкам в
-                        рекламных компаниях и цены вам не будет!
-                    </p>
-                </blockquote>
-                <figcaption class="review__author">
-                    — Владислав
-                </figcaption>
-            </figure>
+            <div class="reviews">
+                <figure class="review">
+                    <blockquote class="review__quote">
+                        <p>
+                            Изначально нашёл сервис в поиске Яндекса,
+                            когда искал калькулятор unit-экономики
+                            товара. Калькулятор полностью устроил и
+                            решил пользоваться самим сайтом. К тому же
+                            это было для меня бесплатно, так как
+                            проходил по условиям бесплатного доступа:
+                            оборот до 200т.р в месяц. Этого не встретить
+                            на других сайтах, это возможность
+                            развиваться на ранних этапах, без вложения
+                            огромных сумм для доступа к подобным сайтам.
+                        </p>
+                        <p>
+                            Радует поддержка, получал ответы на
+                            всевопросы, выслушивали все мои рекомендации
+                            по улучшению сервиса. Какие‑то из них уже
+                            внедрены! Сервис ориентирован на аналитику
+                            своего магазина, продаж. Удобно
+                            анализировать финансовую составляющую.
+                        </p>
+                        <p>
+                            Бывают акции, когда можно хорошо сэкономить
+                            на подписке.
+                        </p>
+                        <p>Желаю сервису развития и успехов!</p>
+                    </blockquote>
+                    <details class="review__details">
+                        <summary>
+                                    <span class="review__more-open">
+                                        Читать полностью
+                                    </span>
+                            <span class="review__more-close">
+                                        Свернуть
+                                    </span>
+                        </summary>
+                        <blockquote class="review__full">
+                            <p>
+                                Изначально нашёл сервис в поиске
+                                Яндекса, когда искал калькулятор
+                                unit-экономики товара. Калькулятор
+                                полностью устроил и решил пользоваться
+                                самим сайтом. К тому же это было для
+                                меня бесплатно, так как проходил по
+                                условиям бесплатного доступа: оборот до
+                                200т.р в месяц. Этого не встретить на
+                                других сайтах, это возможность
+                                развиваться на ранних этапах, без
+                                вложения огромных сумм для доступа к
+                                подобным сайтам.
+                            </p>
+                            <p>
+                                Радует поддержка, получал ответы на
+                                всевопросы, выслушивали все мои
+                                рекомендации по улучшению сервиса.
+                                Какие‑то из них уже внедрены! Сервис
+                                ориентирован на аналитику своего
+                                магазина, продаж. Удобно анализировать
+                                финансовую составляющую.
+                            </p>
+                            <p>
+                                Бывают акции, когда можно хорошо
+                                сэкономить на подписке.
+                            </p>
+                            <p>Желаю сервису развития и успехов!</p>
+                        </blockquote>
+                    </details>
+                    <figcaption class="review__author">
+                        — Алексей
+                    </figcaption>
+                </figure>
+                <figure class="review">
+                    <blockquote class="review__quote">
+                        <p>
+                            Функционал сервиса, тот что есть — полностью
+                            устраивает. Хочется ещё автобиддер по
+                            ставкам в рекламных компаниях и цены вам не
+                            будет!
+                        </p>
+                    </blockquote>
+                    <figcaption class="review__author">
+                        — Владислав
+                    </figcaption>
+                </figure>
+            </div>
         </div>
     </section>
 </main>
 <footer class="site-footer">
     <div class="container site-footer__inner">
-        <a
-                class="brand"
-                href="index.html"
-                aria-label="Mpassistant — главная"
-        >
-            <img
-                    class="brand__image"
-                    src="images/logo.svg"
-                    alt="Mpassistant"
-                    width="260"
-                    height="25"
-            />
-        </a>
-        <p class="site-footer__description">
-            Аналитика и оцифровка продаж Wildberries и Ozon
-        </p>
-        <nav aria-label="Сервис">
-            <h2>Сервис</h2>
-            <ul>
-                <li><a href="#about">Для кого</a></li>
-                <li><a href="#features">Возможности</a></li>
-                <li><a href="#pricing">Тарифы</a></li>
-            </ul>
-        </nav>
-        <section aria-labelledby="clients-heading">
-            <h2 id="clients-heading">Клиентам</h2>
-            <ul>
-                <li>
-                    <button
-                            class="button button--secondary"
-                            type="button"
+        <div class="site-footer__columns">
+            <div class="site-footer__brand">
+                <a
+                        class="brand"
+                        href="index.html"
+                        aria-label="Mpassistant — главная"
+                >
+                    <img
+                            class="brand__image"
+                            src="images/logo.svg"
+                            alt="Mpassistant"
+                            width="260"
+                            height="25"
+                    />
+                </a>
+                <p class="site-footer__description">
+                    Аналитика и оцифровка продаж
+                    <br/>
+                    <span class="marketplace marketplace--wildberries">
+                                Wildberries
+                            </span>
+                    и
+                    <span class="marketplace marketplace--ozon">
+                                Ozon
+                            </span>
+                </p>
+                <div class="site-footer__socials">
+                    <img
+                            src="images/social-vk.svg"
+                            alt="ВКонтакте"
+                            width="70"
+                            height="70"
+                            loading="lazy"
+                    />
+                    <img
+                            src="images/social-telegram.svg"
+                            alt="Telegram"
+                            width="70"
+                            height="70"
+                            loading="lazy"
+                    />
+                    <img
+                            src="images/social-youtube.svg"
+                            alt="YouTube"
+                            width="70"
+                            height="70"
+                            loading="lazy"
+                    />
+                </div>
+                <p><small>© 2022–2023 Mpassistant</small></p>
+                <p>
+                    <small>
+                        Информация, размещённая на сайте, не является
+                        публичной офертой
+                    </small>
+                </p>
+            </div>
+            <nav aria-label="Сервис">
+                <h2>Сервис</h2>
+                <ul>
+                    <li><a href="#about">Для кого</a></li>
+                    <li><a href="#features">Возможности</a></li>
+                    <li><a href="#pricing">Тарифы</a></li>
+                </ul>
+            </nav>
+            <section aria-labelledby="clients-heading">
+                <h2 id="clients-heading">Клиентам</h2>
+                <ul>
+                    <li>
+                        <button
+                                class="button button--secondary"
+                                type="button"
+                        >
+                            Вход
+                        </button>
+                    </li>
+                    <li><a href="#trial">Регистрация</a></li>
+                    <li>
+                        <button class="button" type="button">
+                            Восстановление пароля
+                        </button>
+                    </li>
+                </ul>
+            </section>
+            <section aria-labelledby="documents-heading">
+                <h2 id="documents-heading">Документы</h2>
+                <ul>
+                    <li><a>Пользовательское соглашение</a></li>
+                    <li><a>Политика конфиденциальности</a></li>
+                    <li><a>Публичная оферта</a></li>
+                    <li><a>Использование cookie</a></li>
+                    <li><a>Техническая поддержка</a></li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="site-footer__meta">
+            <div class="site-footer__payments">
+                <img
+                        class="site-footer__payment"
+                        src="images/modulbank.png"
+                        alt="Модульбанк"
+                        width="266"
+                        height="70"
+                        loading="lazy"
+                />
+                <img
+                        class="site-footer__payment"
+                        src="images/visa.png"
+                        alt="Visa"
+                        width="124"
+                        height="50"
+                        loading="lazy"
+                />
+                <img
+                        class="site-footer__payment"
+                        src="images/mastercard.png"
+                        alt="Mastercard"
+                        width="83"
+                        height="50"
+                        loading="lazy"
+                />
+                <img
+                        class="site-footer__payment"
+                        src="images/maestro.png"
+                        alt="Maestro"
+                        width="84"
+                        height="50"
+                        loading="lazy"
+                />
+                <img
+                        class="site-footer__payment"
+                        src="images/mir.png"
+                        alt="Мир"
+                        width="177"
+                        height="50"
+                        loading="lazy"
+                />
+            </div>
+            <p>
+                <small>
+                    Редизайн сайта
+                    <a
+                            class="site-footer__credit"
+                            href="https://turkuletsdesign.ru/"
                     >
-                        Вход
-                    </button>
-                </li>
-                <li><a href="#trial">Регистрация</a></li>
-                <li>
-                    <button class="button" type="button">
-                        Восстановление пароля
-                    </button>
-                </li>
-            </ul>
-        </section>
-        <section aria-labelledby="documents-heading">
-            <h2 id="documents-heading">Документы</h2>
-            <ul>
-                <li><a>Пользовательское соглашение</a></li>
-                <li><a>Политика конфиденциальности</a></li>
-                <li><a>Публичная оферта</a></li>
-                <li><a>Использование cookie</a></li>
-                <li><a>Техническая поддержка</a></li>
-            </ul>
-        </section>
-        <p><small>© 2022–2023 Mpassistant</small></p>
-        <p>
-            <small>
-                Информация, размещённая на сайте, не является публичной
-                офертой
-            </small>
-        </p>
-        <p><small>Редизайн сайта Turkuletsdesign</small></p>
-        <div class="site-footer__payments">
-            <img
-                    class="site-footer__payment"
-                    src="images/visa.png"
-                    alt="Visa"
-                    width="124"
-                    height="50"
-                    loading="lazy"
-            />
-            <img
-                    class="site-footer__payment"
-                    src="images/mastercard.png"
-                    alt="Mastercard"
-                    width="83"
-                    height="50"
-                    loading="lazy"
-            />
-            <img
-                    class="site-footer__payment"
-                    src="images/maestro.png"
-                    alt="Maestro"
-                    width="84"
-                    height="50"
-                    loading="lazy"
-            />
-            <img
-                    class="site-footer__payment"
-                    src="images/mir.png"
-                    alt="Мир"
-                    width="177"
-                    height="50"
-                    loading="lazy"
-            />
-            <img
-                    class="site-footer__payment"
-                    src="images/modulbank.png"
-                    alt="Модульбанк"
-                    width="266"
-                    height="70"
-                    loading="lazy"
-            />
+                        Turkuletsdesign
+                    </a>
+                </small>
+            </p>
         </div>
     </div>
 </footer>

@@ -1,0 +1,3 @@
+Шрифт NT Somic из исходного макета: начертания Regular и Bold.
+Официальный репозиторий автора: https://github.com/nnttttyyppee/NT-Somic
+Лицензия сохранена в NT-Somic-LICENSE.txt.
